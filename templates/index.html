@@ -1,0 +1,38 @@
+         <!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>User Sign Up</title>
+        <style>
+            .error{ color:red; }
+        </style>
+    </head>
+    <body>
+        <form action="/" method="post">
+        
+            <label for="user_name">User Name:</label>
+            <input type="text" id="user_name" name="user_name" value="{{ user_name }}">
+            <span class="error"> {{ user_name_error }} </span>
+            <br>
+        
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" value="{{ password }}">
+            <span class="error"> {{ password_error }} </span>
+            <br>
+
+            <label for="verify_password">Verify Password:</label>
+            <input type="password" id="verify_password" name="verify_password" value="{{ verify_password }}">
+            <span class="error"> {{ verify_password_error }} </span>
+            <br>
+
+            <label for="email">Email(optional):</label>
+            <input type="text" id="email" name="email" value="{{ email }}">
+            <span class="error"> {{ email_error }} </span>
+            <br>
+            <input type="submit">
+        </form>
+    </body>
+
+</html>
